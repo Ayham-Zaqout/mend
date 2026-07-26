@@ -92,13 +92,13 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-0 z-40 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${showMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 bg-black/20 backdrop-blur-sm transition-opacity duration-300 md:hidden ${showMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none invisible"
           }`}
         onClick={() => setShowMenu(false)}
       />
 
       <div
-        className={`fixed bottom-0 right-0 top-0 z-50 flex w-[min(320px,85vw)] flex-col border-l border-border bg-surface p-5 shadow-hover transition-transform duration-300 ease-in-out ${showMenu ? "translate-x-0" : "translate-x-full"
+        className={`fixed bottom-0 right-0 top-0 z-50 flex w-[min(320px,85vw)] flex-col border-l border-border bg-surface p-5 shadow-hover transition-transform duration-300 ease-in-out md:hidden ${showMenu ? "translate-x-0" : "translate-x-full invisible"
           }`}
       >
         <div className="mb-6 flex items-center justify-between border-b border-border pb-4">

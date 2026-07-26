@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import SpecialityMenu from "@/components/SpecialityMenu";
 import Stats from "@/components/Stats";
+import TopDoctors from "@/components/TopDoctors";
 
 const page = () => {
   return (
@@ -8,6 +9,7 @@ const page = () => {
       <Header />
       <Stats />
       <SpecialityMenu />
+      <TopDoctors />
     </div>
   );
 };
