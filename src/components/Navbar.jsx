@@ -27,8 +27,8 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = showMenu ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    document.documentElement.style.overflow = showMenu ? "hidden" : "";
+    return () => { document.documentElement.style.overflow = ""; };
   }, [showMenu]);
 
   useEffect(() => {
@@ -41,14 +41,14 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
-          ? "border-b border-border/80 bg-surface-glass backdrop-blur-md shadow-soft"
-          : "border-b border-border/60 bg-surface/95"
+        ? "border-b border-border/80 bg-surface-glass backdrop-blur-md shadow-soft"
+        : "border-b border-border/60 bg-surface/95"
         }`}
     >
       <div className="container flex h-16 items-center justify-between px-6">
         <Link
           href="/"
-          className="flex min-h-10 items-center transition-transform duration-200 hover:scale-[1.02] active:scale-95"
+          className="flex min-h-10 items-center transition-transform duration-300 hover:scale-[1.02] active:scale-95"
         >
           <span className="text-xl font-extrabold tracking-tight text-primary md:text-2xl">
             Mend<span className="text-accent">.</span>
@@ -60,9 +60,9 @@ const Navbar = () => {
             <li key={href}>
               <Link
                 href={href}
-                className={`relative inline-flex min-h-9 items-center rounded-md px-3.5 transition-colors duration-200 ${isActive(href, pathname)
-                    ? "bg-surface text-primary shadow-sm"
-                    : "text-foreground-muted hover:bg-surface/70 hover:text-foreground"
+                className={`relative inline-flex min-h-9 items-center rounded-md px-3.5 transition-colors duration-300 ${isActive(href, pathname)
+                  ? "bg-surface text-primary shadow-sm"
+                  : "text-foreground-muted hover:bg-surface/70 hover:text-foreground"
                   }`}
               >
                 {label}
@@ -120,8 +120,8 @@ const Navbar = () => {
                 href={href}
                 onClick={() => setShowMenu(false)}
                 className={`block rounded-lg px-4 py-3 text-base font-bold transition-all ${isActive(href, pathname)
-                    ? "bg-primary-soft text-primary"
-                    : "text-foreground-muted hover:bg-surface-muted hover:text-foreground"
+                  ? "bg-primary-soft text-primary"
+                  : "text-foreground-muted hover:bg-surface-muted hover:text-foreground"
                   }`}
               >
                 {label}

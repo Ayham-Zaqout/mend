@@ -90,7 +90,7 @@ const Header = () => {
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="#speciality"
-                className="inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-sm font-bold shadow-lg transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-sm font-bold shadow-lg transition-colors duration-300"
                 style={{ color: "var(--primary)" }}
               >
                 Book appointment
@@ -98,7 +98,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/doctors"
-                className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-colors duration-200 hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-colors duration-300 hover:bg-white/10"
                 style={{
                   border: "1.5px solid rgba(255,255,255,0.28)",
                   color: "rgba(255,255,255,0.92)",
