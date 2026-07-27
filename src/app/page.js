@@ -1,3 +1,5 @@
+import Banner from "@/components/Banner";
+import Features from "@/components/Features";
 import Header from "@/components/Header";
 import SpecialityMenu from "@/components/SpecialityMenu";
 import Stats from "@/components/Stats";
@@ -10,6 +12,8 @@ const page = () => {
       <Stats />
       <SpecialityMenu />
       <TopDoctors />
+      <Features />
+      <Banner />
     </div>
   );
 };

@@ -110,7 +110,7 @@ const Header = () => {
 
             <div className="flex items-center gap-4 pt-1">
               <Image
-                src="/images/group_profiles.png"
+                src="/images/header/group_profiles.png"
                 alt="Trusted patients"
                 width={80}
                 height={40}
@@ -128,7 +128,7 @@ const Header = () => {
 
           <div className="relative mx-auto w-full max-w-md flex-1 self-end md:max-w-none">
             <Image
-              src="/images/header_img.png"
+              src="/images/header/header_img.png"
               alt="Mend doctors"
               className="h-auto w-full select-none drop-shadow-2xl"
               width={560}
