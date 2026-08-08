@@ -1,10 +1,9 @@
-import Banner from "@/components/Banner";
-import Features from "@/components/Features";
 import Header from "@/components/Header";
-import SpecialityMenu from "@/components/SpecialityMenu";
 import Stats from "@/components/Stats";
+import SpecialityMenu from "@/components/SpecialityMenu";
 import TopDoctors from "@/components/TopDoctors";
-
+import Features from "@/components/Features";
+import Banner from "@/components/Banner";
 const page = () => {
   return (
     <div>
